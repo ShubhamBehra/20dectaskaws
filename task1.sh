@@ -1,10 +1,10 @@
-#task1
+#task1 changed from master in git 
 echo "Enter a filename"
 read fn
-if [ -f $fn ];
+if [ -z "$(cat $fn)" ];
 then 
-echo "file exists"
+echo "file is empty"
 else 
-echo "file not exists"
+echo "file is not empty"
 fi
 
